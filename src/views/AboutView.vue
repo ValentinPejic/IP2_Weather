@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="izgled">
     <h1 id="title">Shows temperature every 3h</h1>
     <div class="searchbar">
       <input type="text" id="txt" v-model="city" placeholder="Enter a city">
@@ -16,6 +16,15 @@
       </div>
     </div>
   </div>
+
+  <div id="Projekt">
+  <h1>O projektu</h1>
+  <br>
+  <h2>Projekt je napravljen u sklopu kolegija "Informatički projekt 2" koji koristi Vue.js i <a href="https://openweathermap.org/api">Open weather API</a></h2>
+  <br>
+  <h2>Cilj projekta je pružiti točne informacije o temperaturi za bilo koji grad ili državu na svijetu.</h2>
+</div>
+  
 </template>
 
 <script>
@@ -80,6 +89,12 @@ export default {
 
 <style>
 
+#izgled{
+  text-align: center;
+  padding: 30px;
+  margin-top: 10px;
+}
+
 #title{
   color: white;
   text-align: center;
@@ -91,8 +106,8 @@ export default {
   align-items: center;
   justify-content: center;
   align-items: center;
-  width: 40vh;
-  height: 4.5vh;
+  width: 30vh;
+  height: 4.6vh;
   text-align: center;
 }
 
@@ -107,10 +122,11 @@ export default {
 
 
 #getTemperatureButton {
+  margin-top: 30px;
   padding: 10px 20px;
   border-radius: 4px;
   border: none;
-  background-color: #3f51b5;
+  background-color: #485edb;
   color: #fff;
   font-size: 16px;
   cursor: pointer;
@@ -129,6 +145,10 @@ export default {
 
 #baza{
   background-color: rgb(161, 102, 102);
+}
+
+#Projekt{
+  color: #fff;
 }
 
 </style>
